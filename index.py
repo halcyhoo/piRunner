@@ -167,6 +167,9 @@ setupMomentaryInput(windowDownRemote, "windowDownSwitch", momentaryController, "
 setupMomentaryInput(windowUpSwitch, "windowUpSwitch", momentaryController, "windowUpSwitch", windowUpSwitch);
 setupMomentaryInput(windowDownSwitch, "windowDownSwitch", momentaryController, "windowDownSwitch", windowDownSwitch);
 
+windowDownPositionController(True)
+windowUpPositionController(True)
+
 try:
     while True:
         GPIO.output(statusLED, True)
