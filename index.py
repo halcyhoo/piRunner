@@ -43,8 +43,8 @@ windowUpPosition = 8
 windowDownPosition = 9
 windowUpRemote = 10
 windowDownRemote = 12
-cabLightRemote = 13
-cargoLightRemote = 11
+cabLightRemote = 11
+cargoLightRemote = 13
 
 
 GPIO.setup(cabLightSwitch, GPIO.IN, GPIO.PUD_UP)
@@ -72,8 +72,6 @@ states = {
 buttonTimers = {
     "windowDownSwitch": time.perf_counter(),
     "windowUpSwitch": time.perf_counter(),
-    "cabLight": time.perf_counter(),
-    "cargoLight": time.perf_counter(),
 }
 
 doubleClickTime = 1
